@@ -1,11 +1,11 @@
 {
   "name": "pandoc-as-a-service",
   "version": "1.0.0",
-  "description": "If you need to convert text from one markup format into another, pandoc-as-a-service is your swiss-army knife. ",
+  "description": "Pandoc nodejs server as a website that converts a markdown file to a pdf with initial view set at 100% and the corresponding metadata between YAML markdown and pdf.",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mrded/pandoc-as-a-service.git"
+    "url": "git+https://github.com/Shaneosaure/pandoc-as-a-service.git"
   },
   "keywords": [
     "pandoc",
@@ -14,11 +14,10 @@
     "format",
     "convert"
   ],
-  "author": "Dmitry Demenchuk <dmitry@demenchuk.me>",
+  "author": "Dmitry Demenchuk <dmitry@demenchuk.me> & Shane S.",
   "bugs": {
-    "url": "https://github.com/mrded/pandoc-as-a-service/issues"
+    "url": "https://github.com/Shaneosaure/pandoc-as-a-service/issues"
   },
-  "homepage": "http://pandoc-as-a-service.com",
   "license": "BSD-2-Clause",
   "dependencies": {
     "body-parser": "^1.19.1",
