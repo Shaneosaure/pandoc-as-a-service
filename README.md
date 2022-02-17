@@ -83,6 +83,10 @@ Configuration file (`/etc/apache2/sites-available/<file>.conf`):
         ProxyPassReverse "/convert" "http://localhost:4000"
 </VirtualHost>
 ```
+And reload apache2 for the configuration to be applied:
+```bash
+sudo systemctl reload apache2
+```
 
 ## Start the project
 You can customize the port you want to use. Run the port as an argument:
