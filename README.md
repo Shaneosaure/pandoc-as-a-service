@@ -1,10 +1,11 @@
 # Pandoc As A Service
-If you need to convert a markdown file to a beautiful PDF (initial view at 100%, metadata according to YAML markdown ...)
+If you need to convert a markdown file to a beautiful PDF (initial view at 100% in acrobat, metadata according to YAML markdown ...)
 
 ## Overview
 
 This git is a modified version of https://github.com/mrded/pandoc-as-a-service . Its only goal is to export PDF from markdown.
 ![image](https://user-images.githubusercontent.com/25083427/154469008-fafc2062-3bbd-4773-9f3d-4df80b82f46f.png)
+![image](https://user-images.githubusercontent.com/25083427/154471321-aaf182b8-8b98-472f-9c38-0cddf5ab3d34.png)
 
 ## Installation
 ```bash
@@ -101,10 +102,11 @@ date: "02.03.2022"
 ---
 ```
 This header must be respect the following order and syntax for the metadata :
-* title: "<title>"
-* author: "<author>"
-* subject: "<subject>"
+* `title: "<title>"`
+* `author: "<author>"`
+* `subject: "<subject>"`
 
 Then you can add whatever YAML metadata you want, they wont be implemented to the PDF metadatas.
+For example, the data will not bet exported. But the title will be the pdf file name.
 
 
