@@ -21,6 +21,10 @@ You need to install nodeJS v16.xx (https://github.com/nodesource/distributions/b
 
 ```bash
 npm -g install mermaid-filter
+```
+
+Install the depedencies of the project:
+```bash
 cd pandoc-as-a-service/
 yarn install
 ```
@@ -31,7 +35,7 @@ We need to edit the mermaid node module to export the graphs as SVG for a better
 sudo nano /usr/lib/node_modules/mermaid-filter/index.js
 ```
 And edit the line 30 and replace `'png'` by `'svg'`:
-```json
+```
     format: process.env.MERMAID_FILTER_FORMAT || 'svg',
 ```
 
