@@ -88,4 +88,23 @@ You can customize the port you want to use. Run the port as an argument:
 ```bash
 node index.js 4000
 ```
+Now, access `http://localhost/convert` in your browser !
+
+## Important detail
+In order for the script to work correctly, you need to have a YAML metadata header on your markdown file. 
+```markdown
+---
+title: "MyDocument"
+author: "Shane"
+subject: "A test"
+date: "02.03.2022"
+---
+```
+This header must be respect the following order and syntax for the metadata :
+* title: "<title>"
+* author: "<author>"
+* subject: "<subject>"
+
+Then you can add whatever YAML metadata you want, they wont be implemented to the PDF metadatas.
+
 
