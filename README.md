@@ -4,12 +4,12 @@ If you need to convert a markdown file to a beautiful PDF (initial view at 100%,
 ## Overview
 
 This git is a modified version of https://github.com/mrded/pandoc-as-a-service . Its only goal is to export PDF from markdown.
+![image](https://user-images.githubusercontent.com/25083427/154469008-fafc2062-3bbd-4773-9f3d-4df80b82f46f.png)
 
 ## Installation
 ```bash
 git clone https://github.com/Shaneosaure/pandoc-as-a-service.git
 ``` 
-![image](https://user-images.githubusercontent.com/25083427/154469008-fafc2062-3bbd-4773-9f3d-4df80b82f46f.png)
 
 ### apt packages
 Pandoc will be required to convert the markdown as well as wkhmltopdf. Ghostscript and Exiftool are needed to edit metadatas.
