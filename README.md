@@ -28,6 +28,10 @@ Install the depedencies of the project:
 cd pandoc-as-a-service/
 yarn install
 ```
+We need to make the conversion script executable:
+```bash
+chmod +x convert.sh
+```
 
 ### Configuration of mermaid filter (optional)
 We need to edit the mermaid node module to export the graphs as SVG for a better scalability. 
