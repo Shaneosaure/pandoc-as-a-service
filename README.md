@@ -77,7 +77,7 @@ Configuration file (`/etc/apache2/sites-available/<file>.conf`):
         ProxyVia Full
         ProxyRequests Off
 
-        ServerAlias localhost
+        ServerAlias localhost/convert
         
         ProxyPass "/convert" "http://localhost:4000"
         ProxyPassReverse "/convert" "http://localhost:4000"
