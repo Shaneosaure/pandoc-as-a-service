@@ -1,5 +1,5 @@
 # Pandoc As A Service
-If you need to convert a markdown file to a beautiful PDF (initial view at 100% in acrobat, metadata according to YAML markdown ...)
+If you need to convert a markdown file to a beautiful PDF (initial view at 100%, metadata according to YAML markdown ...)
 
 ## Overview
 
