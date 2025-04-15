@@ -20,7 +20,7 @@
   },
   "license": "BSD-2-Clause",
   "dependencies": {
-    "body-parser": "^1.19.1",
+    "body-parser": "^2.2.0",
     "child_process": "^1.0.2",
     "cors": "^2.8.5",
     "ejs": "^3.1.9",
