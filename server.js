@@ -5,12 +5,18 @@ var express = require('express'),
     shell = require('shelljs');
     fs = require('fs');
 
+// Add rate limiting middleware
+var RateLimit = require('express-rate-limit');
+var downloadLimiter = RateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 100 // limit each IP to 100 requests per windowMs
+});
 this.server = express();
 this.server.set('views', './views');
 this.server.set('view engine', 'ejs');
 this.server.use(express.static('public'));
 
-this.server.get('/download',function(req,res) {
+this.server.get('/download', downloadLimiter, function(req,res) {
     console.log('*******Converting script running...******\nDownloading a file\n*******************');
     var filename = folderPath+'/Files/'+fs.readdirSync(folderPath + '/Files', 'binary');
     res.download(filename);
