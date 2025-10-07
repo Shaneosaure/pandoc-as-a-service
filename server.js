@@ -34,18 +34,19 @@ this.server.post('/download', function(req,res){
     	  if(err) {
         		console.log(err);
     	  } else {
-          const { execSync } = require("child_process");
-          execSync(folderPath+"/convert.sh test.md", (error, stdout, stderr) => {
-            if (error) {
-              console.log(`error: ${error.message}`);
-              return;
-            }
-            if (stderr) {
-              console.log(`stderr: ${stderr}`);
-              return;
-            }
-            console.log(`stdout: ${stdout}`);
-          });;
+          const { execFileSync } = require("child_process");
+          const path = require("path");
+          try {
+            const output = execFileSync(
+              path.join(folderPath, "convert.sh"),
+              ["test.md"],
+              { encoding: "utf-8" }
+            );
+            console.log(`stdout: ${output}`);
+          } catch (error) {
+            console.log(`error: ${error.message}`);
+            return res.sendStatus(500);
+          }
           res.sendStatus(200);
         };
       });
